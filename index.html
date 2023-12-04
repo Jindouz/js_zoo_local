@@ -68,17 +68,17 @@
             <form class="needs-validation" novalidate="">
                 <div class="row g-3">
                     <div class="col-sm-6">
-                        <label class="form-label">Name</label>
+                        <label class="form-label">Name:</label>
                         <input type="text" class="form-control" id="animalName" placeholder="Name" required="">
 
                     </div>
 
                     <div class="col-md-6">
-                        <label class="form-label">Species</label>
+                        <label class="form-label">Select Species:</label>
                         <div class="dropdown">
                             <button class="btn btn-success dropdown-toggle" type="button" id="species"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Select Species
+                                data-bs-toggle="dropdown" aria-expanded="false" value="Lion">
+                                Lion
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="speciesDropdown">
                                 <li><a type="button" class="dropdown-item" onclick="setAnimalSpecies('Lion')">Lion</a>
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="col-sm-6">
-                        <label class="form-label">Age</label>
+                        <label class="form-label">Age:</label>
                         <input type="text" class="form-control" id="age" placeholder="Age">
                     </div>
 
@@ -175,7 +175,7 @@
 
 
             // displays the animals in the database
-            async function displayZoo(species) {
+            function displayZoo(species) {
 
                 let filteredAnimals = [...animals];
 
